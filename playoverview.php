@@ -1,5 +1,5 @@
 <?php
-    require '../db_connection.php';
+    require 'db_connection.php';
     include("auth_session.php");
     $players = [];
     $id = $_GET['id']; // get id through query string

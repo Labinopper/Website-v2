@@ -1,7 +1,7 @@
 <?php
     session_start();
     // When form submitted, check and create user session.
-    require '../db_connection.php';
+    require 'db_connection.php';
 
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
