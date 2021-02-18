@@ -191,7 +191,7 @@ tr:nth-child(even) {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:200px;
+    top:100px;
     left:73.5%;
 }
 
@@ -206,7 +206,7 @@ tr:nth-child(even) {
 #addgamenewgame {
     position: absolute;
     width: 20%;
-    top:200px;
+    top:100px;
     left:73.5%;
     font-family:Cursive;
     border-style: line;
@@ -229,7 +229,7 @@ tr:nth-child(even) {
 #addplaynewplay {
     position: absolute;
     width: 20%;
-    top:200px;
+    top:100px;
     left:73.5%;
     font-family:Cursive;
     border-style: line;
@@ -259,7 +259,7 @@ tr:nth-child(even) {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:200px;
+    top:100px;
     left:73.5%;
     font-family:Cursive;
     border-style: line;
@@ -296,7 +296,7 @@ tr:nth-child(even) {
 
 #GOCustomTableHeader1 {
     position:absolute;
-    top:200px;
+    top:100px;
     left: 6.25%;
     width:25%;
     text-align:center;
@@ -308,7 +308,7 @@ tr:nth-child(even) {
 
 #GOCustomTableHeader2 {
     position:absolute;
-    top:200px;
+    top:100px;
     left: 37.5%;
     width:25%;
     text-align:center;
@@ -320,7 +320,7 @@ tr:nth-child(even) {
 
 #GOCustomTableHeader3 {
     position:absolute;
-    top:200px;
+    top:100px;
     left: 68.75%;
     width:25%;
     text-align:center;
@@ -398,7 +398,7 @@ tr:nth-child(even) {
 
 #GOAddCategoryMain {
     position:absolute;
-    top:200px;
+    top:100px;
     left:1000px;
 }
 
@@ -422,7 +422,7 @@ tr:nth-child(even) {
 
 #POAddCategoryMain {
     position:absolute;
-    top:200px;
+    top:100px;
     left:1000px;
 }
 
