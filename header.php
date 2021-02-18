@@ -70,18 +70,18 @@ body {
 <body>
 
 <div class="navbar">
-  <a href="logout.php">Logout</a>
+  <a href="/logout.php">Logout</a>
   <div class="dropdown">
     <button class="dropbtn">Boardgames 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="dashboard.php">Dashboard</a>
-      <a href="addgame.php">Games</a>
-      <a href="addplay.php">Plays</a>
-      <a href="purchases.php">Purchases</a>
-      <a href="kickstarters2.php">Add Kickstarter Project</a>
-      <a href="kickstarters.php">Add Kickstart Items</a>
+      <a href="/dashboard.php">Dashboard</a>
+      <a href="/addgame.php">Games</a>
+      <a href="/addplay.php">Plays</a>
+      <a href="/purchases.php">Purchases</a>
+      <a href="/kickstarters2.php">Add Kickstarter Project</a>
+      <a href="/kickstarters.php">Add Kickstart Items</a>
     </div>
   </div>
   <div class="dropdown">
@@ -89,8 +89,8 @@ body {
         <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-        <a href="strava\index.php">Dashboard</a>
-        <a href="strava\oauth-flow.php">oAuth Test</a>
+        <a href="/strava/index.php">Dashboard</a>
+        <a href="/strava/oauth-flow.php">oAuth Test</a>
         </div>
 </div>
 </div>
