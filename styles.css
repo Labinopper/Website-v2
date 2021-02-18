@@ -41,7 +41,9 @@ body {
 #AddGameTableKS a {
     top: 140px;
     font-size: 16px;
-    color:white;
+    color:black;
+    padding-left:10px;
+    padding-right:10px;
     text-align: center;
     text-decoration: none;
 }
@@ -49,7 +51,9 @@ body {
 #AddGameTable a {
     top: 140px;
     font-size: 16px;
-    color: white;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     text-decoration: none;
 }
