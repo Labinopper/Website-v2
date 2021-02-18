@@ -24,18 +24,18 @@
 }
 
 body {
-    background-color: #DCDCDC;
+    background-color: #e0e2e4;
 }
 
 #GameTable {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:35%;
-    top:100px;
+    width: 35%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 #AddGameTableKS a {
@@ -62,18 +62,18 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 #GameTable3 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 73.75%;
-    width:20%;
-    top:100px;
+    width: 20%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 #AddGameTable {
@@ -84,7 +84,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -96,7 +96,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #c6bcb6;
 }
 
 #AddNewKS {
@@ -178,25 +178,25 @@ body {
 }
 
 #AddGameTableKS {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:87.5%;
-    top:345px;
+    width: 87.5%;
+    top: 345px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 th {
     font-weight: bold;
     border-bottom: 1px solid black;
-    background-color: #2E8B57;
-    color:white;
+    background-color: #625750;
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f59a6c;
+    background-color: #c6bcb6;
 }
 
 #Title {
@@ -350,36 +350,36 @@ tr:nth-child(even) {
 }
 
 #GOCustomTable1 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:25%;
-    top:100px;
+    width: 25%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 #GOCustomTable2 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 37.5%;
-    width:25%;
-    top:100px;
+    width: 25%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 #GOCustomTable3 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 68.75%;
-    width:25%;
-    top:100px;
+    width: 25%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #96897f;
 }
 
 #error {
