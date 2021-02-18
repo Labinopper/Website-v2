@@ -32,11 +32,8 @@
         $newcategory1 = mysqli_real_escape_string($conn, $newcategory1);
         $newcategory1id = stripslashes($_REQUEST['newcategory1id']);    // removes backslashes
         $newcategory1id = mysqli_real_escape_string($conn, $newcategory1id);
-        echo $newcategory1;
-        echo $newcategory1id;
         $queryinsert = "INSERT INTO `CategoryEntries`(`category_id`, `title`)
                         VALUES( $newcategory1id,'$newcategory1' )";
-        echo $queryinsert;
         $queryinsertresult = mysqli_query($conn, $queryinsert);
     }
     
@@ -45,11 +42,8 @@
         $newcategory2 = mysqli_real_escape_string($conn, $newcategory2);
         $newcategory2id = stripslashes($_REQUEST['newcategory2id']);    // removes backslashes
         $newcategory2id = mysqli_real_escape_string($conn, $newcategory2id);
-        echo $newcategory2;
-        echo $newcategory2id;
         $queryinsert = "INSERT INTO `CategoryEntries`(`category_id`, `title`)
                         VALUES( $newcategory2id,'$newcategory2' )";
-        echo $queryinsert;
         $queryinsertresult = mysqli_query($conn, $queryinsert);
     }
     
@@ -58,11 +52,8 @@
         $newcategory3 = mysqli_real_escape_string($conn, $newcategory3);
         $newcategory3id = stripslashes($_REQUEST['newcategory3id']);    // removes backslashes
         $newcategory3id = mysqli_real_escape_string($conn, $newcategory3id);
-        echo $newcategory3;
-        echo $newcategory3id;
         $queryinsert = "INSERT INTO `CategoryEntries`(`category_id`, `title`)
                         VALUES( $newcategory1id,'$newcategory1' )";
-        echo $queryinsert;
         $queryinsertresult = mysqli_query($conn, $queryinsert);
     }
     
@@ -87,7 +78,6 @@
             $x++;
             $rowid = $row["id"];
             $query2 = "SELECT * FROM CategoryEntries where category_id = $rowid";
-            echo $query2;
             $result2 = mysqli_query($conn,$query2);
             $row2 = mysqli_num_rows($result2);
             echo "<p id='GOCustomTableHeader".$x."'>".$row["categoryname"]."</p>";
@@ -110,7 +100,6 @@
     <?php
     
     $query = "SELECT * FROM `GameCategory` WHERE game_id=$id";
-    echo $query;
     $result = mysqli_query($conn, $query);
     $row = mysqli_num_rows($result);
     if ($result->num_rows > 0) {
