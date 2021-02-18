@@ -2,7 +2,6 @@
     require 'db_connection.php';
     include("auth_session.php");
 
-    session_start();
     // When form submitted, check and create user session.
     require '../db_connection.php';
     $gameexists = "";

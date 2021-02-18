@@ -1,13 +1,4 @@
-<!---    <div id="Banner">
-<center><p id="Title">Welcome <?php echo $_SESSION['username'] ?>!</p></center></div>
 
-    <div id="Menu">
-        <a href="logout.php">Logout</a>
-        <a href="dashboard.php">Homepage</a>
-        <a href="addgame.php">Games</a>
-        <a href="addplay.php">Plays</a>
-        <a href="purchases.php">Purchases</a>
-    </div> -->
 
 
 <style>
@@ -80,16 +71,34 @@ body {
 <body>
 
 <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
+  <a href="logout.php">Logout</a>
   <div class="dropdown">
-    <button class="dropbtn">Dropdown 
+    <button class="dropbtn">Boardgames 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="dashboard.php">Dashboard</a>
+      <a href="addgame.php">Games</a>
+      <a href="addplay.php">Plays</a>
+      <a href="purchases.php">Purchases</a>
     </div>
-  </div> 
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Strava
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="strava\index.php">Dashboard</a>
+        <a href="strava\oauth-flow.php">oAuth Test</a>
 </div>
+
+<!---    <div id="Banner">
+<center><p id="Title">Welcome <?php echo $_SESSION['username'] ?>!</p></center></div>
+
+    <div id="Menu">
+        <a href="logout.php">Logout</a>
+        <a href="dashboard.php">Homepage</a>
+        <a href="addgame.php">Games</a>
+        <a href="addplay.php">Plays</a>
+        <a href="purchases.php">Purchases</a>
+    </div> -->
