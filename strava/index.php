@@ -3,10 +3,14 @@ require '../../db_connection.php';
 include("../auth_session.php");
 require_once 'StravaApi.php';
 ?>
-
-Hello World!
+<html>
+<head>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<?php include('../header.php'); ?>
 <br><br><br><br>
-<table>
+<table id="stravaIndexTable">
     <tr><th>Activity Name</th><th>Date</th><th>Type</th><th>Distance</th></tr>
 
 <?php
@@ -27,3 +31,5 @@ $result = $conn->query($query);
 ?>
 
 </table>
+</body>
+</html>

@@ -24,63 +24,96 @@
 }
 
 body {
-  background-color: #c8eff9;
+    background-color: #F0FFF0;
 }
 
 #GameTable {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:35%;
-    top:200px;
+    width: 35%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#AddGameTableKS a {
+    top: 140px;
+    font-size: 16px;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#AddGameTable a {
+    top: 140px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 
 #GameTable2 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 47.5%;
-    width:20%;
-    top:200px;
+    width: 20%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GameTable3 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 73.75%;
-    width:20%;
-    top:200px;
+    width: 20%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #AddGameTable {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:60%;
-    top:200px;
+    width: 60%;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#stravaIndexTable {
+    font-family: Cursive;
+    position: absolute;
+    left: 6.25%;
+    width: 60%;
+    top: 100px;
+    border-style: line;
+    border-radius: 5px;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #AddNewKS {
-    font-family:Cursive;
-    position:absolute;
-    background-color:#f27d42;
-    left:6.25%;
-    width:87.5%;
-    top:200px;
-    height:215px;
+    font-family: Cursive;
+    position: absolute;
+    left: 6.25%;
+    width: 87.5%;
+    top: 100px;
+    height: 215px;
     border-style: line;
     border-radius: 5px;
+    background-color: #26a69a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .newks-date {
@@ -150,23 +183,26 @@ body {
 }
 
 #AddGameTableKS {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:87.5%;
-    top:445px;
+    width: 87.5%;
+    top: 345px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 th {
-    font-weight:bold;
+    font-weight: bold;
     border-bottom: 1px solid black;
+    background-color: #26a69a;
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f59a6c;
+    background-color: white;
 }
 
 #Title {
@@ -180,7 +216,7 @@ tr:nth-child(even) {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:200px;
+    top:100px;
     left:73.5%;
 }
 
@@ -188,22 +224,25 @@ tr:nth-child(even) {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:350px;
-    left:73.5%;
+    top: 350px;
+    left: 73.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #addgamenewgame {
     position: absolute;
     width: 20%;
-    top:200px;
-    left:73.5%;
-    font-family:Cursive;
+    top: 100px;
+    left: 73.5%;
+    font-family: Cursive;
     border-style: line;
     border-radius: 5px;
-    background-color: #dcafe3;
-    padding-left:15px;
-    padding-right:15px;
-    text-align:center;
+    background-color: #26a69a;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
 }
 
 .newgame-date {
@@ -218,50 +257,53 @@ tr:nth-child(even) {
 #addplaynewplay {
     position: absolute;
     width: 20%;
-    top:200px;
-    left:73.5%;
-    font-family:Cursive;
+    top: 100px;
+    left: 73.5%;
+    font-family: Cursive;
     border-style: line;
     border-radius: 5px;
-    background-color: #dcafe3;
-    padding-left:15px;
-    padding-right:15px;
-    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: #26a69a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #addgamenewpurchase {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:425px;
-    left:73.5%;
-    font-family:Cursive;
+    top: 425px;
+    left: 73.5%;
+    font-family: Cursive;
     border-style: line;
     border-radius: 5px;
-    background-color: #dcafe3;
-    padding-left:15px;
-    padding-right:15px;
-    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: #26a69a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #addpurchasenewpurchase {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:200px;
-    left:73.5%;
-    font-family:Cursive;
+    top: 100px;
+    left: 73.5%;
+    font-family: Cursive;
     border-style: line;
     border-radius: 5px;
-    background-color: #dcafe3;
-    padding-left:15px;
-    padding-right:15px;
-    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: #26a69a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOTitle {
     position:absolute;
-    top:180px;
+    top: 70px;
     left: 6.25%;
     width:60%;
     text-align:center;
@@ -284,12 +326,12 @@ tr:nth-child(even) {
 }
 
 #GOCustomTableHeader1 {
-    position:absolute;
-    top:200px;
+    position: absolute;
+    top: 140px;
     left: 6.25%;
-    width:25%;
-    text-align:center;
-    font-family:Cursive;
+    width: 25%;
+    text-align: center;
+    font-family: Cursive;
     font-size: 40px;
     font-weight: bold;
     color: black;
@@ -297,7 +339,7 @@ tr:nth-child(even) {
 
 #GOCustomTableHeader2 {
     position:absolute;
-    top:200px;
+    top:140px;
     left: 37.5%;
     width:25%;
     text-align:center;
@@ -309,7 +351,7 @@ tr:nth-child(even) {
 
 #GOCustomTableHeader3 {
     position:absolute;
-    top:200px;
+    top:140px;
     left: 68.75%;
     width:25%;
     text-align:center;
@@ -320,36 +362,39 @@ tr:nth-child(even) {
 }
 
 #GOCustomTable1 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 6.25%;
-    width:25%;
-    top:300px;
+    width: 25%;
+    top: 250px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOCustomTable2 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 37.5%;
-    width:25%;
-    top:300px;
+    background-color: #ddf2f0;
+    width: 25%;
+    top: 250px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOCustomTable3 {
-    font-family:Cursive;
+    font-family: Cursive;
     position: absolute;
     left: 68.75%;
-    width:25%;
-    top:300px;
+    width: 25%;
+    top: 250px;
     border-style: line;
     border-radius: 5px;
-    background-color: #f27d42;
+    background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #error {
@@ -387,7 +432,7 @@ tr:nth-child(even) {
 
 #GOAddCategoryMain {
     position:absolute;
-    top:200px;
+    top:100px;
     left:1000px;
 }
 
@@ -411,7 +456,7 @@ tr:nth-child(even) {
 
 #POAddCategoryMain {
     position:absolute;
-    top:200px;
+    top:100px;
     left:1000px;
 }
 
