@@ -1,8 +1,9 @@
 <?php
-    require '/db_connection.php';
-    include("/auth_session.php");
+    require 'db_connection.php';
+    include("auth_session.php");
 
     // When form submitted, check and create user session.
+    require '../db_connection.php';
     $gameexists = "";
     
         if (isset($_POST['comment']) && isset($_POST['cost']) && isset($_POST['Games'])) {

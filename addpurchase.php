@@ -1,7 +1,7 @@
 <?php
 
-    require '/db_connection.php';
-    include("/auth_session.php");
+    require 'db_connection.php';
+    include("auth_session.php");
 
 $addpurchase = mysqli_query($conn,"INSERT INTO `Purchases`(
     `Comment`,
