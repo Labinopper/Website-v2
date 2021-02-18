@@ -303,7 +303,7 @@ tr:nth-child(even) {
 
 #GOTitle {
     position:absolute;
-    top:180px;
+    top:100px;
     left: 6.25%;
     width:60%;
     text-align:center;
