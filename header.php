@@ -31,7 +31,7 @@ body {
 }
 
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
@@ -93,6 +93,3 @@ body {
     </div>
   </div> 
 </div>
-
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
