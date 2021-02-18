@@ -25,7 +25,6 @@
                                 `pmopens`,
                                 `pmcloses`,
                                 `progress`,
-                                `payment_finalised`,
                                 `delivery_date`
                             )
                             VALUES(
@@ -34,7 +33,6 @@
                                 '$pmopendate',
                                 '$pmclosedate',
                                 '$progress',
-                                '$payment_finalised',
                                 '$deliverydate'
                             )";
                             echo $addpurchasequery;
