@@ -196,7 +196,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #ddf2f0;
+    background-color: white;
 }
 
 #Title {
