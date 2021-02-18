@@ -35,7 +35,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 #AddGameTableKS a {
@@ -62,7 +62,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 #GameTable3 {
@@ -73,7 +73,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 #AddGameTable {
@@ -84,7 +84,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -185,13 +185,13 @@ body {
     top: 345px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 th {
     font-weight: bold;
     border-bottom: 1px solid black;
-    background-color: #26a69a;
+    background-color: #ddf2f0;
     color: white;
 }
 
@@ -357,7 +357,7 @@ tr:nth-child(even) {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 #GOCustomTable2 {
@@ -368,7 +368,7 @@ tr:nth-child(even) {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 #GOCustomTable3 {
@@ -379,7 +379,7 @@ tr:nth-child(even) {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #0000b1;
+    background-color: white;
 }
 
 #error {
