@@ -35,7 +35,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 #AddGameTableKS a {
@@ -62,7 +62,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 #GameTable3 {
@@ -73,7 +73,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 #AddGameTable {
@@ -84,7 +84,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -96,7 +96,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #c6bcb6;
+    background-color: #484f4f;
 }
 
 #AddNewKS {
@@ -185,7 +185,7 @@ body {
     top: 345px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 th {
@@ -196,7 +196,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #c6bcb6;
+    background-color: #484f4f;
 }
 
 #Title {
@@ -357,7 +357,7 @@ tr:nth-child(even) {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 #GOCustomTable2 {
@@ -368,7 +368,7 @@ tr:nth-child(even) {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 #GOCustomTable3 {
@@ -379,7 +379,7 @@ tr:nth-child(even) {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #96897f;
+    background-color: #8ca3a3;
 }
 
 #error {
