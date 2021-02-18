@@ -1,6 +1,6 @@
 <?php
 
-    require '../../db_connection.php';
+    require '../db_connection.php';
     include("../auth_session.php");
 
 // Use Composer's autoloader or include the StravaApi class manually:

@@ -1,5 +1,5 @@
 <?php
-require '../../db_connection.php';
+require '../db_connection.php';
 include("../auth_session.php");
 require_once 'StravaApi.php';
 ?>
