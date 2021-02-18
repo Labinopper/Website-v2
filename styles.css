@@ -38,6 +38,10 @@ body {
     background-color: #f27d42;
 }
 
+#GameTable th {
+    background-color: 2E8B57;
+}
+
 #AddGameTable,#AddGameTableKS a {
     top: 140px;
     float: right;
