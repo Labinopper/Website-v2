@@ -267,30 +267,32 @@ tr:nth-child(even) {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:425px;
-    left:73.5%;
-    font-family:Cursive;
+    top: 425px;
+    left: 73.5%;
+    font-family: Cursive;
     border-style: line;
     border-radius: 5px;
-    background-color: #dcafe3;
-    padding-left:15px;
-    padding-right:15px;
-    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: #26a69a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #addpurchasenewpurchase {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:100px;
-    left:73.5%;
-    font-family:Cursive;
+    top: 100px;
+    left: 73.5%;
+    font-family: Cursive;
     border-style: line;
     border-radius: 5px;
-    background-color: #dcafe3;
-    padding-left:15px;
-    padding-right:15px;
-    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: #26a69a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOTitle {
