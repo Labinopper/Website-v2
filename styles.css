@@ -377,11 +377,11 @@ tr:nth-child(even) {
     font-family: Cursive;
     position: absolute;
     left: 37.5%;
+    background-color: white;
     width: 25%;
     top: 250px;
     border-style: line;
     border-radius: 5px;
-    background-color: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
