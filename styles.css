@@ -42,22 +42,16 @@ body {
     top: 140px;
     font-size: 16px;
     color:black;
-    padding-left:10px;
-    padding-right:10px;
     text-align: center;
     text-decoration: none;
-    background-color:blue;
 }
 
 #AddGameTable a {
     top: 140px;
     font-size: 16px;
     color: black;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;
     text-decoration: none;
-    background-color:blue;
 }
 
 #GameTable2 {
