@@ -35,7 +35,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ddf2f0;
 }
 
 #AddGameTableKS a {
@@ -62,7 +62,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ddf2f0;
 }
 
 #GameTable3 {
@@ -73,7 +73,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ddf2f0;
 }
 
 #AddGameTable {
@@ -84,7 +84,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ddf2f0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -96,7 +96,7 @@ body {
     top: 100px;
     border-style: line;
     border-radius: 5px;
-    background-color: #000070;
+    background-color: #ddf2f0;
 }
 
 #AddNewKS {
@@ -185,7 +185,7 @@ body {
     top: 345px;
     border-style: line;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ddf2f0;
 }
 
 th {
