@@ -100,15 +100,16 @@ body {
 }
 
 #AddNewKS {
-    font-family:Cursive;
-    position:absolute;
-    background-color:#f27d42;
-    left:6.25%;
-    width:87.5%;
-    top:100px;
-    height:215px;
+    font-family: Cursive;
+    position: absolute;
+    background-color: #26a69a;
+    left: 6.25%;
+    width: 87.5%;
+    top: 100px;
+    height: 215px;
     border-style: line;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .newks-date {
