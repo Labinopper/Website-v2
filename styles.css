@@ -32,7 +32,7 @@ body {
     position: absolute;
     left: 6.25%;
     width:35%;
-    top:200px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -43,7 +43,7 @@ body {
     position: absolute;
     left: 47.5%;
     width:20%;
-    top:200px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -54,7 +54,7 @@ body {
     position: absolute;
     left: 73.75%;
     width:20%;
-    top:200px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -65,7 +65,7 @@ body {
     position: absolute;
     left: 6.25%;
     width:60%;
-    top:200px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -76,7 +76,7 @@ body {
     position: absolute;
     left: 6.25%;
     width: 60%;
-    top: 200px;
+    top: 100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -88,7 +88,7 @@ body {
     background-color:#f27d42;
     left:6.25%;
     width:87.5%;
-    top:200px;
+    top:100px;
     height:215px;
     border-style: line;
     border-radius: 5px;
@@ -335,7 +335,7 @@ tr:nth-child(even) {
     position: absolute;
     left: 6.25%;
     width:25%;
-    top:300px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -346,7 +346,7 @@ tr:nth-child(even) {
     position: absolute;
     left: 37.5%;
     width:25%;
-    top:300px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
@@ -357,7 +357,7 @@ tr:nth-child(even) {
     position: absolute;
     left: 68.75%;
     width:25%;
-    top:300px;
+    top:100px;
     border-style: line;
     border-radius: 5px;
     background-color: #f27d42;
