@@ -185,6 +185,7 @@ th {
     font-weight: bold;
     border-bottom: 1px solid black;
     background-color: #2E8B57;
+    color:white;
 }
 
 tr:nth-child(even) {
