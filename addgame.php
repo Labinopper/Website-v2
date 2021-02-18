@@ -98,7 +98,7 @@
 
 echo "<table id='AddGameTable'>";
 echo "<tr>";
-echo "<th>Game Name</th><th>Game collection</th><th>Times played</th><th>Duration</th><th>Cost</th><th>Cost P/H</th><th></th><th></th>";
+echo "<th>Game Name</th><th>Game collection</th><th>Times played</th><th>Duration</th><th>Cost</th><th>Cost P/H</th><th></th><th></th></tr>";
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
