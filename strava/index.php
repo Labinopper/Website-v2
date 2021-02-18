@@ -5,11 +5,11 @@ require_once 'StravaApi.php';
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <br><br><br><br>
-<table>
+<table id="stravaIndexTable">
     <tr><th>Activity Name</th><th>Date</th><th>Type</th><th>Distance</th></tr>
 
 <?php

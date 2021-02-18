@@ -71,6 +71,17 @@ body {
     background-color: #f27d42;
 }
 
+#stravaIndexTable {
+    font-family: Cursive;
+    position: absolute;
+    left: 6.25%;
+    width: 60%;
+    top: 200px;
+    border-style: line;
+    border-radius: 5px;
+    background-color: #f27d42;
+}
+
 #AddNewKS {
     font-family:Cursive;
     position:absolute;

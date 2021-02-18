@@ -1,2 +1,4 @@
 
 .vs/Website/v16/.suo
+*.sqlite
+.vs/slnx.sqlite
