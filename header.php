@@ -5,7 +5,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #625750;
+  background-color: #563f46;
   border-style: line;
   border-radius: 5px;
 }

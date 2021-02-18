@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: #e0e2e4;
+    background-color: #c8c3cc;
 }
 
 #GameTable {
@@ -191,7 +191,7 @@ body {
 th {
     font-weight: bold;
     border-bottom: 1px solid black;
-    background-color: #625750;
+    background-color: #563f46;
     color: white;
 }
 
