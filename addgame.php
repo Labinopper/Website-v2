@@ -4,7 +4,6 @@
 
     session_start();
     // When form submitted, check and create user session.
-    require '../db_connection.php';
     $gameexists = "";
     if (isset($_POST['name']) && isset($_POST['collection'])) {
         $name = stripslashes($_REQUEST['name']);    // removes backslashes
