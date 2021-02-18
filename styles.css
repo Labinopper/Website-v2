@@ -15,16 +15,16 @@
 }
 
 #Main {
-    font-family: Cursive;
-    font-size: 24px;
+    font-family:Cursive;
+    font-size:24px;
     position: absolute;
-    top: 195px;
-    left: 25px;
-    background-color: #f7f8f8
+    top:195px;
+    left:25px;
+    background-color: grey;
 }
 
 body {
-  background-color: #c8eff9;
+    background-color: #f7f8f8;
 }
 
 #GameTable {
@@ -42,7 +42,7 @@ body {
     top: 140px;
     float: right;
     font-size: 16px;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
