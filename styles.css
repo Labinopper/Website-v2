@@ -36,6 +36,7 @@ body {
     border-style: line;
     border-radius: 5px;
     background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #AddGameTableKS a {
@@ -63,6 +64,7 @@ body {
     border-style: line;
     border-radius: 5px;
     background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GameTable3 {
@@ -74,6 +76,7 @@ body {
     border-style: line;
     border-radius: 5px;
     background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #AddGameTable {
@@ -97,6 +100,7 @@ body {
     border-style: line;
     border-radius: 5px;
     background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #AddNewKS {
@@ -187,6 +191,7 @@ body {
     border-style: line;
     border-radius: 5px;
     background-color: #ddf2f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 th {
@@ -219,8 +224,9 @@ tr:nth-child(even) {
     background-color: white;
     position: absolute;
     width: 20%;
-    top:350px;
-    left:73.5%;
+    top: 350px;
+    left: 73.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #addgamenewgame {
@@ -236,7 +242,7 @@ tr:nth-child(even) {
     padding-right: 15px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color:white;
+    color: white;
 }
 
 .newgame-date {
@@ -320,15 +326,16 @@ tr:nth-child(even) {
 }
 
 #GOCustomTableHeader1 {
-    position:absolute;
-    top:100px;
+    position: absolute;
+    top: 100px;
     left: 6.25%;
-    width:25%;
-    text-align:center;
-    font-family:Cursive;
+    width: 25%;
+    text-align: center;
+    font-family: Cursive;
     font-size: 40px;
     font-weight: bold;
     color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOCustomTableHeader2 {
