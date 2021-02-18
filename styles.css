@@ -335,7 +335,6 @@ tr:nth-child(even) {
     font-size: 40px;
     font-weight: bold;
     color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOCustomTableHeader2 {
@@ -367,10 +366,11 @@ tr:nth-child(even) {
     position: absolute;
     left: 6.25%;
     width: 25%;
-    top: 100px;
+    top: 250px;
     border-style: line;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOCustomTable2 {
@@ -378,10 +378,11 @@ tr:nth-child(even) {
     position: absolute;
     left: 37.5%;
     width: 25%;
-    top: 100px;
+    top: 250px;
     border-style: line;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #GOCustomTable3 {
@@ -389,10 +390,11 @@ tr:nth-child(even) {
     position: absolute;
     left: 68.75%;
     width: 25%;
-    top: 100px;
+    top: 250px;
     border-style: line;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #error {
