@@ -2,7 +2,6 @@
     require 'db_connection.php';
     include("auth_session.php");
 
-    session_start();
     // When form submitted, check and create user session.
     $gameexists = "";
     if (isset($_POST['name']) && isset($_POST['collection'])) {
@@ -60,17 +59,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="Banner">
-<center><p id="Title">Welcome <?php echo $_SESSION['username'] ?>!</p></center></div>
+<?php include('header.php'); ?>
 
-    <div id="Menu">
-        <a href="logout.php">Logout</a>
-        <a href="dashboard.php">Homepage</a>
-        <a href="addgame.php">Games</a>
-        <a href="addplay.php">Plays</a>
-        <a href="purchases.php">Purchases</a>
-        <a href="kickstarters2.php">Add Kickstarter</a>
-    </div> 
     
         <?php
     
@@ -107,7 +97,7 @@
 
 echo "<table id='AddGameTable'>";
 echo "<tr>";
-echo "<th>Game Name</th><th>Game collection</th><th>Times played</th><th>Duration</th><th>Cost</th><th>Cost P/H</th><th></th><th></th>";
+echo "<th>Game Name</th><th>Game collection</th><th>Times played</th><th>Duration</th><th>Cost</th><th>Cost P/H</th><th></th><th></th></tr>";
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -138,8 +128,8 @@ if ($result->num_rows > 0) {
             $costPerHour = $cost / ($row["LENGTH"] / 3600);
             echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
         }
-        echo "<td><a href='gameoverview.php?id=". $row["id"]."'>View Details</a></td>";
-        echo "<td><a onClick=\"javascript:return confirm('Are you sure you want to delete ". $row["name"]."?');\" href='deletegame.php?id=". $row["id"]."'>Delete</a></td>";
+        echo "<td><center><a href='gameoverview.php?id=". $row["id"]."'>View Details</a></center></td>";
+        echo "<td><center><a onClick=\"javascript:return confirm('Are you sure you want to delete ". $row["name"]."?');\" href='deletegame.php?id=". $row["id"]."'>Delete</a></center></td>";
         echo "</tr>";
     }
     echo "</table>";
