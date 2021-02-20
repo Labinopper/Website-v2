@@ -438,19 +438,19 @@ tr:nth-child(even) {
 
 #GOAddCategory1 {
     position:absolute;
-    top:225px;
+    top:125px;
     left:1000px;
 }
 
 #GOAddCategory2 {
     position:absolute;
-    top:250px;
+    top:150px;
     left:1000px;
 }
 
 #GOAddCategory3 {
     position:absolute;
-    top:275px;
+    top:175px;
     left:1000px;
 }
 
