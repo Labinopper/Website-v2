@@ -53,7 +53,7 @@
         $newcategory3id = stripslashes($_REQUEST['newcategory3id']);    // removes backslashes
         $newcategory3id = mysqli_real_escape_string($conn, $newcategory3id);
         $queryinsert = "INSERT INTO `CategoryEntries`(`category_id`, `title`)
-                        VALUES( $newcategory1id,'$newcategory1' )";
+                        VALUES( $newcategory3id,'$newcategory3' )";
         $queryinsertresult = mysqli_query($conn, $queryinsert);
     }
     
