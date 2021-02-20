@@ -65,7 +65,6 @@
 </head>
 <body>
 <?php include('header.php'); ?>
-   <?php echo $name; ?>
     </div>
     <?php
         $query = "SELECT * FROM `GameCategory` WHERE game_id='$id'";
@@ -77,7 +76,6 @@
             $x++;
             $rowid = $row["id"];
             $query2 = "SELECT * FROM CategoryEntries where category_id = $rowid";
-            echo $query2;
             $result2 = mysqli_query($conn,$query2);
             $row2 = mysqli_num_rows($result2);
             echo "<p id='GOCustomTableHeader".$x."'>".$row["categoryname"]."</p>";
@@ -100,17 +98,18 @@
     <?php
     
     $query = "SELECT * FROM `GameCategory` WHERE game_id=$id";
-    echo $query;
     $result = mysqli_query($conn, $query);
     $row = mysqli_num_rows($result);
     if ($result->num_rows > 0) {
         $x = 0;
         while($row = $result->fetch_assoc()) {
             $x++;
+            /*
             $categoryname = stripslashes($row['categoryname']);    // removes backslashes
             $categoryname = mysqli_real_escape_string($conn, $categoryname);
             $categoryid = stripslashes($row['categoryid']);    // removes backslashes
             $categoryid = mysqli_real_escape_string($conn, $categoryid);
+            */
             echo '<form id="GOAddCategory'.$x.'" method="POST">
             <input type="hidden" name="newcategory'.$x.'id" value="'.$row["id"].'">
             <input type="Text" name="newcategory'.$x.'">
