@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\strava"
   ],
-  "SelectedNode": "\\index.php",
+  "SelectedNode": "\\strava\\stravaapitest.php",
   "PreviewInSolutionExplorer": false
 }
