@@ -33,7 +33,6 @@
                                 '$ks',
                                 '$paid'
                             )";
-                            echo $addpurchasequery;
         $resultpurchasequery = mysqli_query($conn, $addpurchasequery);
         }
 ?>
