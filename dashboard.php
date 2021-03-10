@@ -12,9 +12,11 @@
     
     <?php
     
-    $sql = "SELECT * FROM `Games`
+    $sql = "SELECT Games.name,Plays.DATE, Plays.TIME,count(Plays_Players_lnk.plays_id) AS players FROM `Games`
             inner join Plays
             on Games.id = Plays.game_id
+            left join Plays_Players_lnk on Plays_Players_lnk.plays_id = Plays.id
+            group by Plays.id
             Order by Plays.DATE desc
             limit 12";
 $result = $conn->query($sql);
