@@ -416,18 +416,20 @@ tr:nth-child(even) {
 }
 
 #login-form {
-    position:absolute;
-    left:40%;
-    width:20%;
-    right:40%;
-    top:35%;
-    height:30%;
-    bottom:35%;
-    background-color:#dcafe3;
+    position: absolute;
+    left: 40%;
+    width: 250px;
+    right: 40%;
+    top: 35%;
+    height: 200px;
+    bottom: 35%;
+    background-color: #333;
     text-align: center;
-    font-family:Cursive;
+    font-family: Cursive;
     border-style: ridge;
-    border-radius: 50px;
+    border-radius: 5px;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2), 0 18px 40px 0 rgba(0, 0, 0, 0.19);
+    color: white;
 }
 
 #GOAddCategoryMain {
