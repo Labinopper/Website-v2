@@ -411,11 +411,11 @@ tr:nth-child(even) {
     font-family:Cursive;
 }
 
-#login-input {
+.login-input {
     text-align:center
 }
 
-#login-button {
+.login-button {
     background-color: greenyellow;
 }
 
