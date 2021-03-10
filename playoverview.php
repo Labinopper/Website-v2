@@ -15,7 +15,6 @@
                 $result2 = mysqli_query($conn,$query2);
                 $row2 = mysqli_num_rows($result2);
                 $x++;
-                echo 'Player ID test';
                 while ($row2 = $result2->fetch_assoc()) {
                     $players[$x] = $row2["players_id"];
                     echo $players[$x];
@@ -26,7 +25,6 @@
     if (isset($_POST['GameScenario'])) {
         $GameScenario = stripslashes($_REQUEST['GameScenario']);    // removes backslashes
         $GameScenario = mysqli_real_escape_string($conn, $GameScenario);
-        echo $GameScenario;
         // Check user is exist in the database
         $query    = "UPDATE
                         `Plays`
@@ -35,7 +33,6 @@
                     WHERE
                         id = $id";
         $result2 = mysqli_query($conn, $query);
-        echo $query;
     }
             
     if (isset($_POST['GamePlayer1'])) {
@@ -51,7 +48,6 @@
                     AND
                         players_id = $players[1]";
         $result = mysqli_query($conn, $query);
-        echo $query;
     }
     
     if (isset($_POST['GamePlayer2'])) {
@@ -67,7 +63,6 @@
                     AND
                         players_id = $players[2] ";
         $result = mysqli_query($conn, $query);
-        echo $query;
     }
     
     if (isset($_POST['GamePlayer3'])) {
@@ -83,7 +78,6 @@
                     AND
                         players_id = $players[3] ";
         $result = mysqli_query($conn, $query);
-        echo $query;
     }
     
     if (isset($_POST['GamePlayer4'])) {
@@ -99,7 +93,6 @@
                     AND
                         players_id = $players[4] ";
         $result = mysqli_query($conn, $query);
-        echo $query;
     }
     
     if (isset($_POST['GamePlayer5'])) {
@@ -115,7 +108,6 @@
                     AND
                         players_id = $players[5] ";
         $result = mysqli_query($conn, $query);
-        echo $query;
     }
     
     if (isset($_POST['GamePlayer6'])) {
@@ -131,7 +123,6 @@
                     AND
                         players_id = $players[6] ";
         $result = mysqli_query($conn, $query);
-        echo $query;
     }
     
     $mainquery =    "SELECT
