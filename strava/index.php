@@ -22,7 +22,7 @@ $result = $conn->query($query);
 
     while($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td><center>". $row["activity_name"]."</center></td>";
+        echo "<td><center>". $row["type"]."</center></td>";
         echo "<td><center>". $row["start_date"]."</center></td>";
         echo "<td><center>". $row["type"]."</center></td>";    
         echo "<td><center>". $row["distance"]."</center></td>";    
