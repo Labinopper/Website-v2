@@ -8,7 +8,7 @@
     require_once 'StravaApi.php';
 
 // Replace with the actual URL of this file:
-    define('CALLBACK_URL', 'http://labinopper.000webhostapp.com/strava/oauth-flow.php?action=callback');
+    define('CALLBACK_URL', 'http://labinopper.com/strava/oauth-flow.php?action=callback');
 // Insert your Strava App ID + Secret:
     define('STRAVA_API_ID', '61720');
     define('STRAVA_API_SECRET', '11aeefa6ca2165b893c14c6be3392f699d3cfd6b');
