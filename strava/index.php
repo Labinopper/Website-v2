@@ -17,7 +17,7 @@ require_once 'StravaApi.php';
 
 $user_id = $_SESSION['id'];
 
-$query    = "SELECT * FROM `Activities` WHERE user_id = $user_id";
+$query    = "SELECT * FROM `Activities` WHERE user_id = $user_id order by start_date desc";
 $result = $conn->query($query);
 
     while($row = $result->fetch_assoc()) {
