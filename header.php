@@ -80,8 +80,8 @@ body {
       <a href="/addgame.php">Games</a>
       <a href="/addplay.php">Plays</a>
       <a href="/purchases.php">Purchases</a>
-      <a href="/kickstarters2.php">Add Kickstarter Project</a>
-      <a href="/kickstarters.php">Add Kickstarter Items</a>
+      <a href="/kickstarters2.php">Kickstarter Projects</a>
+      <a href="/kickstarters.php">Kickstarter Items</a>
     </div>
   </div>
   <div class="dropdown">
