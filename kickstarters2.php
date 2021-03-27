@@ -50,23 +50,19 @@
 <?php include('header.php');
  
     if(isset($_GET['id'])) {
-        ?>
-        <div id="AddNewKS">
-            <form class="form" method="post" name="newks">
-        <h1 class ="addpurchase"><center>New Kickstarter</center></h1>
-        <select name = "Games" class="ksinput">
-            <?php 
+        echo '<div id="AddNewKS">';
+        echo '<form class="form" method="post" name="newks">';
+        echo '<h1 class ="addpurchase"><center>New Kickstarter</center></h1>';
+        echo '<select name = "Games" class="ksinput">';
             
             $sql2 = "select * from Games left join Kickstarters on Kickstarters.game_id = Games.id where Kickstarters.id = $id";
             $result2 = $conn->query($sql2);
-            
                 while($row2 = $result2->fetch_assoc()) {
                     echo "<option value = \"". $row2['id'] . "\">" . $row2['name'] . "</option>";
 
-            ?>
-        </select>
-        <input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">
-        <?php echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';
+        echo '</select>';
+        echo '<input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">';
+        echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';
         echo '<span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="'.$row2['pmcloses'].'" name="pmclosedate" min="2020-01-01"></span>';
         echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="deliverydate" min="2020-01-01"></span>';
         if($row2["progress"] === "A") {
@@ -147,12 +143,10 @@
             echo '</select></center></td>';
         }
 
-        ?>
-        <br><br><br>
-        <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
-        </form>
-        </div>
-        <?php
+        echo '<br><br><br>';
+        echo '<input type="submit" value="Add Game" name="submit" class="newks-submit"/>';
+        echo '</form>';
+        echo '</div>';
     } else {
         ?>
         <div id="AddNewKS">
