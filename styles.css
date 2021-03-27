@@ -1,31 +1,3 @@
-@media only screen and (min-width: 600px) {
-    .login-input {
-        text-align:center
-    }
-
-    #login-button {
-        background-color: greenyellow;
-    }
-
-    #login-form {
-        position: absolute;
-        left: 20%;
-        width: 250px;
-        right: 20%;
-        top: 15%;
-        height: 200px;
-        bottom: 15%;
-        background-color: #333;
-        text-align: center;
-        font-family: Cursive;
-        border-style: ridge;
-        border-radius: 5px;
-        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2), 0 18px 40px 0 rgba(0, 0, 0, 0.19);
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 992px) {
 
     #Banner {
         position: absolute;
