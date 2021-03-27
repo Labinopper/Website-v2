@@ -66,88 +66,19 @@
             ?>
         </select>
         <input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">
-        <?php echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';
-        echo '<span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="'.$row2['pmcloses'].'" name="pmclosedate" min="2020-01-01"></span>';
-        echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="deliverydate" min="2020-01-01"></span>';
-        if($row2["progress"] === "A") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A" selected="selected">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
-        }
-        if($row2["progress"] === "B") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B" selected="selected">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
-        }
-        if($row2["progress"] === "C") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C" selected="selected">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
-        }
-        if($row2["progress"] === "D") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D" selected="selected">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
-        }
-        if($row2["progress"] === "E") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E" selected="selected">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
-        }
-        if($row2["progress"] === "F") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F" selected="selected">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
-        }
-        if($row2["progress"] === "G") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G" selected="selected">Delivered</option>';
-            echo '</select></center></td>';
-        }
-
-        ?>
+        <?php echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';?>
+        <span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="2021-01-01" name="pmclosedate" min="2020-01-01"></span>
+        <span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="<?php echo date('Y-m-d'); ?>" name="deliverydate" min="2020-01-01"></span>
+        <select id = "ksprogress" name="progress">
+            <option value="A" selected="selected">Coming Soon</option>
+            <option value="B">KS Open</option>
+            <option value="C">Pleged on KS</option>
+            <option value="D">PM Open</option>
+            <option value="E">Pledge Finalised</option>
+            <option value="F">Money Taken</option>
+            <option value="G">Delivered</option>
+        </select>
+        <?php } ?>
         <br><br><br>
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
     </form>
