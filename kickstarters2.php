@@ -80,10 +80,10 @@
         </select>
         <br><br><br>
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
-  </form>
+    </form>
     </div>
-    }
     <?php
+    }
     else {
     ?>
     <div id="AddNewKS">
