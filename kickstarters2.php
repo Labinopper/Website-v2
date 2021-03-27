@@ -59,7 +59,6 @@
             $result2 = $conn->query($sql2);
                 while($row2 = $result2->fetch_assoc()) {
                     echo "<option value = \"". $row2['id'] . "\">" . $row2['name'] . "</option>";
-                    }
 
         echo '</select>';
         echo '<input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">';
