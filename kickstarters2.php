@@ -145,15 +145,15 @@
             echo '<option value="F">Money Taken</option>';
             echo '<option value="G" selected="selected">Delivered</option>';
             echo '</select></center></td>';
-        }
+        };
 
         ?>
         <br><br><br>
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
-        </form>
-        </div>
-        <?php
-    };
+    </form>
+    </div>
+    <?php
+    }
     else {
     ?>
     <div id="AddNewKS">
@@ -188,7 +188,7 @@
   </form>
     </div>
 <?php
-    };
+    }
 
     $sql = "SELECT
     Kickstarters.*,
