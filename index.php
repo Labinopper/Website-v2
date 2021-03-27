@@ -46,7 +46,7 @@
         <h1 class="login-title">Login here!!</h1>
         <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/><br>
-        <input type="submit" value="Login" name="submit" class="login-button"/>
+        <input type="submit" value="Login" name="submit" id="login-button"/>
         </form>
   </div>
 </body>

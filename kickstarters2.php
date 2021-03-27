@@ -99,7 +99,7 @@ order by Kickstarters.delivery_date";
 
 echo "<table id='AddGameTableKS'>";
 echo "<tr>";
-echo "<th>Name</th><th>Collection</th><th>PM</th><th>PM Opens</th><th>PM Closes</th><th>Progress</th><th>Cost</th><th>Delivery Date</th><th>Delete</th>";
+echo "<th>Name</th><th>Collection</th><th>PM</th><th>PM Opens</th><th>PM Closes</th><th>Progress</th><th>Cost</th><th>Delivery Date</th><th>Update</th><th>Delete</th>";
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -199,6 +199,7 @@ if ($result->num_rows > 0) {
         $cost = sprintf("%02d",$row["cost"]);
         echo "<td><center>£". number_format($cost,2,'.',' ')."</center></td>";
         echo "<td><center>". $row["delivery_date"]."</center></td>";
+        echo "<td><center>Update ". $row["id"]."</center></td>";
         echo "<td><a onClick=\"javascript:return confirm('Are you sure you want to delete your purchase of ". $row["name"]."?');\" href='deletekickstart.php?id=". $row["id"]."'>Delete</a></td>";
         echo "</tr>";
     }
