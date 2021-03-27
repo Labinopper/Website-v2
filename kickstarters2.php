@@ -145,7 +145,7 @@
             echo '<option value="F">Money Taken</option>';
             echo '<option value="G" selected="selected">Delivered</option>';
             echo '</select></center></td>';
-        };
+        }
 
         ?>
         <br><br><br>
