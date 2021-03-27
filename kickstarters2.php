@@ -69,7 +69,7 @@
                     echo '<span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="'.$row2['pmcloses'].'" name="pmclosedate" min="2020-01-01"></span>';
                     echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="deliverydate" min="2020-01-01"></span>';
                     if($row2["progress"] === "A") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A" selected="selected">Coming Soon</option>';
                         echo '<option value="B">KS Open</option>';
                         echo '<option value="C">Pleged on KS</option>';
@@ -80,7 +80,7 @@
                         echo '</select></td>';
                     }
                     if($row2["progress"] === "B") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A">Coming Soon</option>';
                         echo '<option value="B" selected="selected">KS Open</option>';
                         echo '<option value="C">Pleged on KS</option>';
@@ -91,7 +91,7 @@
                         echo '</select></td>';
                     }
                     if($row2["progress"] === "C") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A">Coming Soon</option>';
                         echo '<option value="B">KS Open</option>';
                         echo '<option value="C" selected="selected">Pleged on KS</option>';
@@ -102,7 +102,7 @@
                         echo '</select></td>';
                     }
                     if($row2["progress"] === "D") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A">Coming Soon</option>';
                         echo '<option value="B">KS Open</option>';
                         echo '<option value="C">Pleged on KS</option>';
@@ -113,7 +113,7 @@
                         echo '</select></td>';
                     }
                     if($row2["progress"] === "E") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A">Coming Soon</option>';
                         echo '<option value="B">KS Open</option>';
                         echo '<option value="C">Pleged on KS</option>';
@@ -124,7 +124,7 @@
                         echo '</select></td>';
                     }
                     if($row2["progress"] === "F") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A">Coming Soon</option>';
                         echo '<option value="B">KS Open</option>';
                         echo '<option value="C">Pleged on KS</option>';
@@ -135,7 +135,7 @@
                         echo '</select></td>';
                     }
                     if($row2["progress"] === "G") {
-                        echo '<td><select name = "progress">';
+                        echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A">Coming Soon</option>';
                         echo '<option value="B">KS Open</option>';
                         echo '<option value="C">Pleged on KS</option>';
