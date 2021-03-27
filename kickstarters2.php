@@ -67,7 +67,7 @@
                     <?php
                     echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';
                     echo '<span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="'.$row2['pmcloses'].'" name="pmclosedate" min="2020-01-01"></span>';
-                    echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value=".'$row2['delivery_date'].'" name="deliverydate" min="2020-01-01"></span>';
+                    echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="deliverydate" min="2020-01-01"></span>';
                     if($row["progress"] === "A") {
                         echo '<td><center><select name = "progress">';
                         echo '<option value="A" selected="selected">Coming Soon</option>';
