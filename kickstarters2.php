@@ -9,7 +9,33 @@
             $id = $_GET['id']; // get id through query string
         }
 
-    
+        if (isset($_GET['updatedeliverydate'])) {
+            $gameName = stripslashes($_REQUEST['Games']);    // removes backslashes
+            $gameName = mysqli_real_escape_string($conn, $gameName);
+            $deliverydate = stripslashes($_REQUEST['updatedeliverydate']);
+            $deliverydate = mysqli_real_escape_string($conn, $deliverydate);
+            $progress = stripslashes($_REQUEST['progress']);
+            $progress = mysqli_real_escape_string($conn, $progress);
+            $pm = stripslashes($_REQUEST['pm']);
+            $pm = mysqli_real_escape_string($conn, $pm);
+            $pmopendate = stripslashes($_REQUEST['pmopendate']);
+            $pmopendate = mysqli_real_escape_string($conn, $pmopendate);
+            $pmclosedate = stripslashes($_REQUEST['pmclosedate']);
+            $pmclosedate = mysqli_real_escape_string($conn, $pmclosedate);
+            $updateks = "UPDATE
+                            `Kickstarters`
+                        SET
+                            delivery_date = $deliverydate
+                            progress = $progress
+                            pmopens = $pmopendate
+                            pmcloses = $pmclosedate
+                            pm = $pm
+                        WHERE
+                            id = $id";
+        $update = mysqli_query($conn, $updateks);
+                            
+        }
+
         if (isset($_POST['Games']) && isset($_POST['deliverydate'])) {
         $gameName = stripslashes($_REQUEST['Games']);    // removes backslashes
         $gameName = mysqli_real_escape_string($conn, $gameName);
@@ -67,7 +93,7 @@
                     <?php
                     echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';
                     echo '<span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="'.$row2['pmcloses'].'" name="pmclosedate" min="2020-01-01"></span>';
-                    echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="deliverydate" min="2020-01-01"></span>';
+                    echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="updatedeliverydate" min="2020-01-01"></span>';
                     if($row2["progress"] === "A") {
                         echo '<td><select id = "ksprogress" name = "progress">';
                         echo '<option value="A" selected="selected">Coming Soon</option>';
@@ -148,7 +174,7 @@
                 }
             ?>
         <br><br><br>
-        <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
+        <input type="submit" value="Update Game" name="submit" class="newks-submit"/>
         </form>
         </div>
         <?php
