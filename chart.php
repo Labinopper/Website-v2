@@ -39,8 +39,8 @@
 			var data = new google.visualization.DataTable();
 			data.addColumn('string', 'Topping');
 		data.addColumn('number', 'Slices');
-
-		"<?php while ($row = $result2 -> fetch_assoc()) { echo 'data.addRow( $row['MONTH'] , $row['COUNT'] , $row['LENGTH'] );';} ?> "
+		"<?php echo 'data.addRow( $row['MONTH'] , $row['COUNT'] , $row['LENGTH'] )';"
+		"<?php while ($row = $result2 -> fetch_assoc()) { echo 'data.addRow( $row['MONTH'] , $row['COUNT'] , $row['LENGTH'] )';}; ?> "
 
 
 			// Set chart options
