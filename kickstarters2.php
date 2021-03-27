@@ -252,81 +252,31 @@ if ($result->num_rows > 0) {
             echo "<td><center>". $row["pmcloses"]."</center></td>";
         }
         if($row["progress"] === "A") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A" selected="selected">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>Coming Soon</center></td>';
         }
         if($row["progress"] === "B") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B" selected="selected">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>KS Open</center></td>';
+
         }
         if($row["progress"] === "C") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C" selected="selected">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>Pledged on KS</center></td>';
+
         }
         if($row["progress"] === "D") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D" selected="selected">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>PM Open</center></td>';
+
         }
         if($row["progress"] === "E") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E" selected="selected">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>Pledge Finalised</center></td>';
+
         }
         if($row["progress"] === "F") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F" selected="selected">Money Taken</option>';
-            echo '<option value="G">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>Money Taken</center></td>';
+
         }
         if($row["progress"] === "G") {
-            echo '<td><center><select name = "progress">';
-            echo '<option value="A">Coming Soon</option>';
-            echo '<option value="B">KS Open</option>';
-            echo '<option value="C">Pleged on KS</option>';
-            echo '<option value="D">PM Open</option>';
-            echo '<option value="E">Pledge Finalised</option>';
-            echo '<option value="F">Money Taken</option>';
-            echo '<option value="G" selected="selected">Delivered</option>';
-            echo '</select></center></td>';
+            echo '<td><center>Delivered</center></td>';
+
         }
         $cost = sprintf("%02d",$row["cost"]);
         echo "<td><center>£". number_format($cost,2,'.',' ')."</center></td>";
