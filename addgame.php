@@ -128,7 +128,7 @@ if ($result->num_rows > 0) {
             $costPerHour = $cost / ($row["LENGTH"] / 3600);
             echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
         }
-        echo "<td><center><a href='gameoverview.php?id=". $row["id"]."'>View Details</a></center></td>";
+        echo "<td><center><a href='gameoverview.php?id=". $row["id"]."'>Details</a></center></td>";
         echo "<td><center><a onClick=\"javascript:return confirm('Are you sure you want to delete ". $row["name"]."?');\" href='deletegame.php?id=". $row["id"]."'>Delete</a></center></td>";
         echo "</tr>";
     }
