@@ -79,7 +79,7 @@
             <option value="F">Money Taken</option>
             <option value="G">Delivered</option>
         </select>
-        }
+        <?php } ?>
         <br><br><br>
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
     </form>
