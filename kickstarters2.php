@@ -62,7 +62,7 @@
             
                 while($row2 = $result2->fetch_assoc()) {
                     echo "<option value = \"". $row2['id'] . "\">" . $row2['name'] . "</option>";
-
+                }
             ?>
         </select>
         <?php echo $result2; echo $row2; ?>
@@ -79,7 +79,6 @@
             <option value="F">Money Taken</option>
             <option value="G">Delivered</option>
         </select>
-        }
         <br><br><br>
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
     </form>
