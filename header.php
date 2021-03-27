@@ -81,7 +81,7 @@ body {
       <a href="/addplay.php">Plays</a>
       <a href="/purchases.php">Purchases</a>
       <a href="/kickstarters2.php">Add Kickstarter Project</a>
-      <a href="/kickstarters.php">Add Kickstart Items</a>
+      <a href="/kickstarters.php">Add Kickstarter Items</a>
     </div>
   </div>
   <div class="dropdown">
