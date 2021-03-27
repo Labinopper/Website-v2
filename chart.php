@@ -1,3 +1,23 @@
+<?php
+    require 'db_connection.php';
+	include("auth_session.php");
+
+	$sql2 = "SELECT DISTINCT
+            DATE_FORMAT(DATE, '%M %Y') AS MONTH,
+            COUNT(*) AS COUNT,
+            SUM(TIME_TO_SEC(TIME)) AS LENGTH
+            FROM
+            Plays
+            GROUP BY
+            MONTH
+            ORDER BY
+            DATE
+            DESC
+            LIMIT 12;";
+    $result2 = $conn->query($sql2);
+
+	echo $result2;
+?>
 <html>
 <head>
 	<!--Load the AJAX API-->
@@ -13,7 +33,10 @@
 		// Callback that creates and populates a data table,
 		// instantiates the pie chart, passes in the data and
 		// draws it.
-		function drawChart() {
+	function drawChart() {
+
+		var result = <?php echo json_encode($result2); ?>;
+
 
 			// Create the data table.
 			var data = new google.visualization.DataTable();
