@@ -70,6 +70,7 @@
                 T1.collection AS collection,
                 T1.count AS Count,
                 T1.length AS LENGTH,
+                Kickstarters.progress,
                 SUM(Purchases.Cost) AS cost
             FROM
                 (
@@ -87,6 +88,7 @@
                 ORDER BY NAME ASC
             ) AS T1
             LEFT JOIN Purchases ON Purchases.game_id = T1.id
+            LEFT JOIN Kickstarters ON Kickstarters.game_id = T1.id
             GROUP BY
                 T1.name
             ORDER BY
@@ -101,37 +103,39 @@ echo "<th>Game Name</th><th>Game collection</th><th>Times played</th><th>Duratio
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        if($row["LENGTH"] === NULL) {
-            $row["LENGTH"] = 0;
+        if($row['progress'] === NULL || $row['progress'] === 'G') {
+            if($row["LENGTH"] === NULL) {
+                $row["LENGTH"] = 0;
+            }
+            if($row["cost"] === NULL) {
+                $row["cost"] = 0.00;
+            }
+            echo "<tr>";
+            echo "<td><center>". $row["name"]."</center></td>";
+            echo "<td><center>". $row["collection"]."</center></td>";
+            echo "<td><center>". $row["Count"]."</center></td>";
+            $hours = sprintf("%02d",floor($row["LENGTH"] / 3600));
+            $minutes = sprintf("%02d",floor($row["LENGTH"] / 60 % 60));
+            $cost = sprintf("%02d",$row["cost"]);
+            echo "<td><center>$hours:$minutes</center></td>";
+            echo "<td><center>£". number_format($cost,2,'.',' ')."</center></td>";
+            if($row["cost"] === NULL || $row["cost"] === 0 ) {
+                $costPerHour = 0.00;
+                echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
+            }
+            else if($row["LENGTH"] === NULL || $row["LENGTH"] === 0) {
+                $costPerHour = $cost / 1;
+                echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
+            }
+            else {
+                $costPerHour = $cost / ($row["LENGTH"] / 3600);
+                echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
+            }
+            echo "<td><center><a href='gameoverview.php?id=". $row["id"]."'>Details</a></center></td>";
+            echo "<td><center><a onClick=\"javascript:return confirm('Are you sure you want to delete ". $row["name"]."?');\" href='deletegame.php?id=". $row["id"]."'>Delete</a></center></td>";
+            echo "</tr>";
+            }
         }
-        if($row["cost"] === NULL) {
-            $row["cost"] = 0.00;
-        }
-        echo "<tr>";
-        echo "<td><center>". $row["name"]."</center></td>";
-        echo "<td><center>". $row["collection"]."</center></td>";
-        echo "<td><center>". $row["Count"]."</center></td>";
-        $hours = sprintf("%02d",floor($row["LENGTH"] / 3600));
-        $minutes = sprintf("%02d",floor($row["LENGTH"] / 60 % 60));
-        $cost = sprintf("%02d",$row["cost"]);
-        echo "<td><center>$hours:$minutes</center></td>";
-        echo "<td><center>£". number_format($cost,2,'.',' ')."</center></td>";
-        if($row["cost"] === NULL || $row["cost"] === 0 ) {
-            $costPerHour = 0.00;
-            echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
-        }
-        else if($row["LENGTH"] === NULL || $row["LENGTH"] === 0) {
-            $costPerHour = $cost / 1;
-            echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
-        }
-        else {
-            $costPerHour = $cost / ($row["LENGTH"] / 3600);
-            echo "<td><center>£". number_format($costPerHour,2,'.',' ')."</center></td>";
-        }
-        echo "<td><center><a href='gameoverview.php?id=". $row["id"]."'>Details</a></center></td>";
-        echo "<td><center><a onClick=\"javascript:return confirm('Are you sure you want to delete ". $row["name"]."?');\" href='deletegame.php?id=". $row["id"]."'>Delete</a></center></td>";
-        echo "</tr>";
-    }
     echo "</table>";
 } else {
     echo "0 results";
