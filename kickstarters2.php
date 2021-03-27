@@ -91,7 +91,7 @@
                     ?>
                     </select>
                     <?php
-                    echo '<input type="comment" class="ksinput" name="pm" value="'.$row['pm'].'">';
+                    echo '<input type="comment" class="ksinput" name="pm" value="'.$row2['pm'].'">';
                     echo '<span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="'.$row2['pmopens'].'" name="pmopendate" min="2020-01-01"></span>';
                     echo '<span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="'.$row2['pmcloses'].'" name="pmclosedate" min="2020-01-01"></span>';
                     echo '<span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="'.$row2['delivery_date'].'" name="updatedeliverydate" min="2020-01-01"></span>';
