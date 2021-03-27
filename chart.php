@@ -40,12 +40,7 @@
 			data.addColumn('string', 'Topping');
 		data.addColumn('number', 'Slices');
 
-<? php
-  $row = mysql_fetch_array($result2);
-		foreach($row as $data) {
-			echo "data.addRow( $data['MONTH'] , $data['COUNT'] , $data['LENGTH'] );";
-		} 
-?>
+"<?php $row = mysql_fetch_array($result2); foreach($row as $data) { echo 'data.addRow( $data['MONTH'] , $data['COUNT'] , $data['LENGTH'] );'; } ?>"
 
 
 			// Set chart options
