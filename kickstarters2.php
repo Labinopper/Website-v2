@@ -5,6 +5,10 @@
     // When form submitted, check and create user session.
     require 'db_connection.php';
     $gameexists = "";
+        if(isset($_GET['id'])) {
+            $id = $_GET['id']; // get id through query string
+        }
+
     
         if (isset($_POST['Games']) && isset($_POST['deliverydate'])) {
         $gameName = stripslashes($_REQUEST['Games']);    // removes backslashes
@@ -43,9 +47,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<?php include('header.php'); ?>
+<?php include('header.php');
  
-    
+    if(isset($_GET['id'])) {
+        ?>
+        <div id="AddNewKS">
+            <form class="form" method="post" name="newks">
+        <h1 class ="addpurchase"><center>New Kickstarter</center></h1>
+        <select name = "Games" class="ksinput">
+            <?php 
+            
+            $sql2 = "select * from Games inner join Kickstarters on Kickstarters.game_id = Games.id where Games.id = $id";
+            $result2 = $conn->query($sql2);
+            
+                while($row2 = $result2->fetch_assoc()) {
+                    echo "<option value = \"". $row2['id'] . "\">" . $row2['name'] . "</option>";
+                }
+            ?>
+        </select>
+        <input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">
+        <span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="<?php $result2['pmopens'] ?>" name="pmopendate" min="2020-01-01"></span>
+        <span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="2021-01-01" name="pmclosedate" min="2020-01-01"></span>
+        <span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="<?php echo date('Y-m-d'); ?>" name="deliverydate" min="2020-01-01"></span>
+        <select id = "ksprogress" name="progress">
+            <option value="A" selected="selected">Coming Soon</option>
+            <option value="B">KS Open</option>
+            <option value="C">Pleged on KS</option>
+            <option value="D">PM Open</option>
+            <option value="E">Pledge Finalised</option>
+            <option value="F">Money Taken</option>
+            <option value="G">Delivered</option>
+        </select>
+        <br><br><br>
+        <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
+  </form>
+    </div>
+    }
+    <?php
+    else {
+    ?>
     <div id="AddNewKS">
             <form class="form" method="post" name="newks">
         <h1 class ="addpurchase"><center>New Kickstarter</center></h1>
@@ -77,7 +117,8 @@
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
   </form>
     </div>
-    
+    }
+
     
     
     
@@ -199,7 +240,7 @@ if ($result->num_rows > 0) {
         $cost = sprintf("%02d",$row["cost"]);
         echo "<td><center>£". number_format($cost,2,'.',' ')."</center></td>";
         echo "<td><center>". $row["delivery_date"]."</center></td>";
-        echo "<td><center><a href='updateks.php?id=". $row["id"]."'>Update</a></center></td>";
+        echo "<td><center><a href='kickstarters2.php?id=". $row["id"]."'>Update</a></center></td>";
         echo "<td><a onClick=\"javascript:return confirm('Are you sure you want to delete your purchase of ". $row["name"]."?');\" href='deletekickstart.php?id=". $row["id"]."'>Delete</a></td>";
         echo "</tr>";
     }
