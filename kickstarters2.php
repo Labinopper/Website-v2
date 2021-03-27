@@ -32,7 +32,6 @@
                             pm = '$pm'
                         WHERE
                             id = $id";
-        echo $updateks;
         $update = mysqli_query($conn, $updateks);
                             
         }
