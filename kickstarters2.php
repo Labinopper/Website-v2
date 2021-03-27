@@ -145,15 +145,50 @@
             echo '<option value="F">Money Taken</option>';
             echo '<option value="G" selected="selected">Delivered</option>';
             echo '</select></center></td>';
-        }
+        };
 
         ?>
         <br><br><br>
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
-        </form>
-        </div>
-        <?php
-        }
+    </form>
+    </div>
+    <?php
+    }
+    else {
+    ?>
+    <div id="AddNewKS">
+            <form class="form" method="post" name="newks">
+        <h1 class ="addpurchase"><center>New Kickstarter</center></h1>
+        <select name = "Games" class="ksinput">
+            <?php 
+            
+            $sql2 = "select id,name from Games order by collection, name asc ";
+            $result2 = $conn->query($sql2);
+            
+                while($row2 = $result2->fetch_assoc()) {
+                    echo "<option value = \"". $row2['id'] . "\">" . $row2['name'] . "</option>";
+                }
+            ?>
+        </select>
+        <input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">
+        <span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="2021-01-01" name="pmopendate" min="2020-01-01"></span>
+        <span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="2021-01-01" name="pmclosedate" min="2020-01-01"></span>
+        <span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="<?php echo date('Y-m-d'); ?>" name="deliverydate" min="2020-01-01"></span>
+        <select id = "ksprogress" name="progress">
+            <option value="A" selected="selected">Coming Soon</option>
+            <option value="B">KS Open</option>
+            <option value="C">Pleged on KS</option>
+            <option value="D">PM Open</option>
+            <option value="E">Pledge Finalised</option>
+            <option value="F">Money Taken</option>
+            <option value="G">Delivered</option>
+        </select>
+        <br><br><br>
+        <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
+  </form>
+    </div>
+<?php
+    }
 
     $sql = "SELECT
     Kickstarters.*,
