@@ -117,13 +117,9 @@
         <input type="submit" value="Add Game" name="submit" class="newks-submit"/>
   </form>
     </div>
+<?php
     }
 
-    
-    
-    
-        <?php
-    
     $sql = "SELECT
     Kickstarters.*,
     SUM(Purchases.cost) AS cost,
