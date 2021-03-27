@@ -103,7 +103,7 @@ echo "<th>Name</th><th>Collection</th><th>PM</th><th>PM Opens</th><th>PM Closes<
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tr name='row ".$row."'>";
+        echo "<tr>";
         echo "<td><center>". $row["name"]."</center></td>";
         echo "<td><center>". $row["collection"]."</center></td>";
         echo "<td><center>". $row["pm"]."</center></td>";
