@@ -15,8 +15,6 @@
             DESC
             LIMIT 12;";
     $result2 = $conn->query($sql2);
-
-	echo $result2;
 ?>
 <html>
 <head>
