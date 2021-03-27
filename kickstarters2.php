@@ -199,7 +199,7 @@ if ($result->num_rows > 0) {
         $cost = sprintf("%02d",$row["cost"]);
         echo "<td><center>£". number_format($cost,2,'.',' ')."</center></td>";
         echo "<td><center>". $row["delivery_date"]."</center></td>";
-        echo "<td><center><a href="updateks.php?id=". $row["id"]."&progress"></center></td>";
+        echo "<td><center><a href="updateks.php?id=". $row["id"]."&progress">Update</a></center></td>";
         echo "<td><a onClick=\"javascript:return confirm('Are you sure you want to delete your purchase of ". $row["name"]."?');\" href='deletekickstart.php?id=". $row["id"]."'>Delete</a></td>";
         echo "</tr>";
     }
