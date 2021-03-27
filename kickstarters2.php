@@ -66,7 +66,7 @@
             ?>
         </select>
         <input type="comment" class="ksinput" name="pm" placeholder="Pledge Manager">
-        <span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="<?php $result2['pmopens'] ?>" name="pmopendate" min="2020-01-01"></span>
+        <span id="ksdate1">PM Opens:<input type="date" class="newks-date" value="<?php $row2['pmopens'] ?>" name="pmopendate" min="2020-01-01"></span>
         <span id="ksdate2">PM Closes:<input type="date" class="newks-date" value="2021-01-01" name="pmclosedate" min="2020-01-01"></span>
         <span id="ksdate3">Delivery Date:<input type="date" class="newks-date" value="<?php echo date('Y-m-d'); ?>" name="deliverydate" min="2020-01-01"></span>
         <select id = "ksprogress" name="progress">
