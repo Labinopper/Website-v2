@@ -9,7 +9,7 @@
             $id = $_GET['id']; // get id through query string
         }
 
-        if (isset($_GET['updatedeliverydate'])) {
+        if(isset($_POST['updatedeliverydate'])) {
             $gameName = stripslashes($_REQUEST['Games']);    // removes backslashes
             $gameName = mysqli_real_escape_string($conn, $gameName);
             $deliverydate = stripslashes($_REQUEST['updatedeliverydate']);
