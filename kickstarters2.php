@@ -25,10 +25,10 @@
             $updateks = "UPDATE
                             `Kickstarters`
                         SET
-                            delivery_date = '$deliverydate'
-                            progress = '$progress'
-                            pmopens = '$pmopendate'
-                            pmcloses = '$pmclosedate'
+                            delivery_date = '$deliverydate',
+                            progress = '$progress',
+                            pmopens = '$pmopendate',
+                            pmcloses = '$pmclosedate',
                             pm = '$pm'
                         WHERE
                             id = $id";
