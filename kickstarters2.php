@@ -57,7 +57,7 @@
         <select name = "Games" class="ksinput">
             <?php 
             
-            $sql2 = "select * from Games inner join Kickstarters on Kickstarters.game_id = Games.id where Games.id = $id";
+            $sql2 = "select * from Games left join Kickstarters on Kickstarters.game_id = Games.id where Games.id = $id";
             $result2 = $conn->query($sql2);
             
                 while($row2 = $result2->fetch_assoc()) {
