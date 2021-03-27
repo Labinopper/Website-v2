@@ -41,7 +41,7 @@
 			data.addColumn('number', 'Number of Games');
 			data.addColumn('number','Time')
 			"<?php echo 'data.addRow( $row['MONTH'] , $row['COUNT'] , $row['LENGTH'] )';"
-			"<?php while ($row = $result2 -> fetch_assoc()) { echo 'data.addRow( $row['MONTH'] , $row['COUNT'] , $row['LENGTH'] )';}; ?> "
+			//"<?php while ($row = $result2 -> fetch_assoc()) { echo 'data.addRow( $row['MONTH'] , $row['COUNT'] , $row['LENGTH'] )';}; ?> "
 
 
 			// Set chart options
